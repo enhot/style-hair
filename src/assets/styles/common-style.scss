@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Lexend+Deca:regular);
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700);
+//width
+$maxWidth: 1440px;
+$maxWidthContainer: 1270px;
+//Fonts
+$font-default: Lexend + Deca;
+$font-dmSans: DM + Sans;
+
+//COlors
+$bg-colorHeaderFooterHero: #dfccc2;
+$bg-colorGreenLove: #c5cebd;
+$bg-colorSelf: #c2b8cc;
+$underlineColor: #f95454;
+$color-default: #fff;
+$color-text: #6e645f;
+
+// Container
+body {
+  font-family: $font-default;
+  font-size: clamp(0.875rem, 0.7321rem + 0.2976vw, 1rem);
+  background-color: $bg-colorHeaderFooterHero;
+}
+
+[class*="__container"] {
+  box-sizing: border-box;
+  max-width: $maxWidthContainer;
+  color: $color-default;
+  padding: 0px clamp(0.3125rem, 0.116rem + 0.98vw, 0.9375rem);
+
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}

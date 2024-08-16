@@ -1,0 +1,76 @@
+@import "../../../assets/styles/reset-style.scss";
+@import "../../../assets/styles/common-style.scss";
+
+.header__container {
+  max-width: 1370px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  max-height: 41px;
+  height: 100vh;
+  overflow: visible;
+  padding: 0px clamp(0.3125rem, 0.116rem + 0.98vw, 0.9375rem);
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(1.875rem, -2.405rem + 8.916vw, 5.0625rem);
+  font-family: $font-dmSans;
+  font-weight: 500;
+}
+
+.header__logo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(1.5rem, 1.357rem + 0.714vw, 2rem);
+}
+.logo {
+  letter-spacing: 1.2px;
+}
+
+.header__modal-menu_btn {
+  display: none;
+  height: 20px;
+  border: none;
+  background-color: inherit;
+  cursor: none;
+  span {
+    min-width: 100%;
+    width: 25px;
+    height: 1px;
+    border-bottom: 2px solid $color-default;
+  }
+}
+
+.book-app__btn {
+  border: none;
+  background-color: inherit;
+  text-decoration: underline red 2px;
+  text-underline-offset: 5.5px;
+  font-family: $font-dmSans;
+  font-weight: 500;
+}
+.btn__br {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__modal-menu_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header__nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .btn__br {
+    display: block;
+  }
+}

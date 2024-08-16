@@ -1,0 +1,61 @@
+@import "../../../assets/styles/reset-style.scss";
+@import "../../../assets/styles/common-style.scss";
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(1.25rem, -0.319rem + 7.843vw, 6.25rem)
+    clamp(0.3125rem, 0.116rem + 0.98vw, 0.9375rem);
+  overflow: visible;
+}
+
+.block-list__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: clamp(0.625rem, 0.037rem + 2.941vw, 2.5rem); //40px
+  column-gap: clamp(0.9375rem, -0.239rem + 5.882vw, 4.6875rem); //75px
+}
+
+.footer__block-invite {
+  display: flex;
+  flex-direction: column;
+}
+.block-invite__span-inv {
+  display: inline-block;
+  font-size: clamp(1rem, 0.725rem + 1.373vw, 1.875rem);
+}
+.block-invite__link {
+  display: inline-block;
+  align-self: self-end;
+  font-size: clamp(1.5rem, 1.382rem + 0.588vw, 1.875rem);
+  color: $underlineColor;
+
+  text-decoration: underline 3px $underlineColor;
+  text-underline-offset: 7px;
+}
+//Drop menu
+.footer__drop-up {
+  display: none;
+}
+.drop-up__btn {
+  background-color: $color-default;
+  color: $color-text;
+  border: 1px solid $underlineColor;
+}
+.drop-up__list {
+  background-color: $bg-colorSelf;
+  a {
+    color: $color-default;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__block-list {
+    display: none;
+  }
+  .footer__drop-up {
+    display: block;
+  }
+}
