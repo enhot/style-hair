@@ -1,0 +1,68 @@
+@import "../../../assets/styles/common-style.scss";
+@import "../../../assets/styles/reset-style.scss";
+
+.focused {
+}
+
+.focused__container {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.focused__img-left {
+  position: relative;
+  flex: 0 1 33.333%;
+  max-width: 312px;
+  max-height: 385px;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+.focused__img-left::before {
+  content: url(../../../assets/imgs/under-hero/smt-left.svg);
+  position: absolute;
+  bottom: -30%;
+  left: -25%;
+  z-index: -1; /* Убедитесь, что он отображается за остальными элементами */
+}
+
+.img-left__black {
+}
+
+.focused__center-block {
+  flex: 0 1 33.333%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.center-block__title {
+  font-size: 40px;
+}
+.center-block__text {
+  color: $color-text;
+}
+.focused__img-right {
+  position: relative;
+  display: flex;
+  flex: 0 1 33.333%;
+  transform: translateY(
+    calc(50% - 50px)
+  ); /* Смещаем изображение вниз на 50% его высоты */
+  max-width: 365px;
+  max-height: 530px;
+  width: 100%;
+  height: auto;
+}
+.img-right__flower {
+  display: block;
+  object-fit: contain;
+}
+.focused__img-right::before {
+  content: url(../../../assets/imgs/under-hero/smt-right.svg);
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  z-index: -1;
+}

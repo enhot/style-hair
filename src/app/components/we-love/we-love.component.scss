@@ -1,0 +1,75 @@
+@import "../../../assets/styles/common-style.scss";
+@import "../../../assets/styles/reset-style.scss";
+
+.we-love {
+  margin-top: 129px;
+  background-color: $bg-colorGreenLove;
+}
+
+.we-love__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 309px;
+  padding-bottom: 339px;
+  z-index: 1;
+  overflow: visible;
+}
+.we-love__img-grey {
+  position: absolute;
+  top: 50%;
+  left: -5.5%;
+  transform: translateY(-50%);
+  max-width: 558px;
+  max-height: 704px;
+  height: auto;
+  width: 100%;
+  z-index: -1;
+}
+
+.we-love__centr-block {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+.centr-text__title {
+  font-size: 60px;
+  max-width: 402px;
+  max-height: 198px;
+  width: 100%;
+}
+.centr-text__text {
+  align-self: flex-end;
+  color: $color-text;
+  max-width: 308px;
+  max-height: 120px;
+  width: 100%;
+}
+.we-love__img-block {
+  position: absolute;
+  bottom: -50px;
+  right: -18px;
+  max-width: 338px;
+  max-height: 400px;
+  width: 100%;
+  z-index: 1;
+}
+.we-love__img-block::before {
+  content: url("../../../assets/imgs/love/smt.svg");
+  position: absolute;
+  bottom: 38%;
+  left: 0;
+  z-index: -1;
+}
+.we-love__img-block::after {
+  content: url(../../../assets/imgs/love/hair-grey.png);
+  position: absolute;
+  top: -70%;
+  right: -35%;
+
+  z-index: -1;
+}
+
+.img-block {
+}

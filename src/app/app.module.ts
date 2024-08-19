@@ -13,6 +13,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ModalMenuComponent } from './components/modal-menu/modal-menu.component';
 import { HeroComponent } from './components/hero/hero.component';
+import { UnderHeroComponent } from './components/under-hero/under-hero.component';
+import { WeLoveComponent } from './components/we-love/we-love.component';
+import { OurServiceComponent } from './components/our-service/our-service.component';
+import { WeWorkComponent } from './components/we-work/we-work.component';
+import { LetMakeComponent } from './components/let-make/let-make.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +27,11 @@ import { HeroComponent } from './components/hero/hero.component';
     HomeComponent,
     ModalMenuComponent,
     HeroComponent,
+    UnderHeroComponent,
+    WeLoveComponent,
+    OurServiceComponent,
+    WeWorkComponent,
+    LetMakeComponent,
   ],
   imports: [
     CommonModule,

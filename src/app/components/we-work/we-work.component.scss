@@ -1,0 +1,29 @@
+@import "../../../assets/styles/common-style.scss";
+@import "../../../assets/styles/reset-style.scss";
+.we-work {
+  background-image: url("../../../assets/imgs/work/bg-girl.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.we-work__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 16px;
+  height: 100%;
+  text-align: center;
+}
+.we-work__title {
+  font-size: 60px;
+}
+.we-work__text {
+  font-size: 16px;
+  letter-spacing: -0.4px;
+  margin-bottom: 106px;
+  max-width: 393px;
+  max-height: 48px;
+}
